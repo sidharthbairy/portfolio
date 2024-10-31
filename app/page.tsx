@@ -1,5 +1,3 @@
-import { BlogPosts } from 'app/components/posts'
-
 export default function Page() {
   return (
     <section>
@@ -7,15 +5,11 @@ export default function Page() {
         My Portfolio
       </h1>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`I'm a computer science undergraduate at the National University of Singapore. Feel free to take a look at my work.`}
       </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
+      <p className="my-8">
+        For professional enquires, please drop an email to <strong>sidharth.bairy@gmail.com</strong>.
+      </p>
     </section>
   )
 }
