@@ -2,8 +2,13 @@
 
 import React, { useEffect, useRef } from 'react'
 
-export const SkillRing = ({ skill, percentage }) => {
-    const ringRef = useRef()
+interface SkillRingProps {
+    skill: string
+    percentage: number
+  }
+  
+export const SkillRing: React.FC<SkillRingProps> = ({ skill, percentage }) => {
+    const ringRef = useRef<HTMLDivElement>(null)
   
     useEffect(() => {
       if (ringRef.current) {
@@ -17,4 +22,4 @@ export const SkillRing = ({ skill, percentage }) => {
         <span className="skill-name absolute bottom-[-1rem] text-center w-full">{skill}</span>
       </div>
     )
-  }
+}
